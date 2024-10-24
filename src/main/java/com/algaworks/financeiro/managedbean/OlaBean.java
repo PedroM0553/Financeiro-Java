@@ -1,9 +1,15 @@
-package com.algaworks.financeiro.Bean;
-@javax.faces.bean.ManagedBean
+package com.algaworks.financeiro.managedbean;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean(name = "ola")
 public class OlaBean {
 	private String nome;
 	private String sobrenome;
 	private String nomeCompleto;
+
+	public OlaBean() {
+	}
 
 	public void dizerOla() {
 		this.nomeCompleto = this.nome.toUpperCase() + " " + this.sobrenome;

@@ -84,7 +84,6 @@ public class Lancamento implements Serializable {
 		this.valor = valor;
 	}
 
-
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
 	public TipoLancamento getTipo() {
